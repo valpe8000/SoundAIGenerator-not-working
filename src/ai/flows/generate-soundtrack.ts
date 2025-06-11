@@ -32,7 +32,7 @@ const generateSoundtrackPrompt = ai.definePrompt({
   name: 'generateSoundtrackPrompt',
   input: {schema: GenerateSoundtrackInputSchema},
   output: {schema: GenerateSoundtrackOutputSchema},
-  prompt: `You are an AI sound design engine. Generate a 1-3 minute royalty-free background soundtrack based on the user-selected genre and mood. Provide metadata such as BPM, key, instruments used, and mood tags.
+  prompt: `You are an AI sound design conceptualizer. Your task is to describe a concept for a 1-3 minute royalty-free background soundtrack based on the user-selected genre and mood. Provide a detailed description of what this soundtrack would sound like and include specific metadata such as BPM, key, primary instruments, and mood tags. As a text-based AI, you cannot generate actual audio files. Your response should focus on providing a rich textual description and precise metadata.
 
 Genre: {{{genre}}}
 Mood: {{{mood}}}
